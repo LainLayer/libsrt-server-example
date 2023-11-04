@@ -1,0 +1,35 @@
+#+TITLE: libsrt server example
+
+* what is this
+
+A small SRT server example for me to use as a reference.
+
+* usage
+
+#+BEGIN_SRC shell
+./main
+#+END_SRC
+
+Connect to the server like this:
+#+BEGIN_SRC shell
+srt-live-transmit "srt://localhost:5000?mode=caller" "file://con"
+#+END_SRC
+
+This should now print something like this:
+#+BEGIN_SRC
+hello!
+hello!
+hello!
+hello!
+hello!
+hello!
+#+END_SRC
+
+supports multiple clients.
+
+* build
+
+#+BEGIN_SRC shell
+make
+#+END_SRC
+
